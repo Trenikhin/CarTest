@@ -2543,7 +2543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 404e4d6b8e5f43e69ec0b55bf47674c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 110
+  _speed: 100
   _lapAcceleration: 2
   _raceFlow: {fileID: 760088006}
   _enemyCar: {fileID: 1434241697}
@@ -9042,7 +9042,7 @@ MonoBehaviour:
   springForce: 40000
   springDamper: 3000
   MaxSpeed: 150
-  Acceleration: 20
+  Acceleration: 25
   AccelerationCurve:
     serializedVersion: 2
     m_Curve:
