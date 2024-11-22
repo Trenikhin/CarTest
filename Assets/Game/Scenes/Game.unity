@@ -2543,8 +2543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 404e4d6b8e5f43e69ec0b55bf47674c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 60
-  _lapAcceleration: 2
+  _speed: 12
+  _lapAcceleration: 1.5
   _raceFlow: {fileID: 760088006}
   _enemyCar: {fileID: 1434241697}
   _pathSaver: {fileID: 760088001}
