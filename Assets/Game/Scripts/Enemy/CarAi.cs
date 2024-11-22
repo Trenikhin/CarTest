@@ -16,6 +16,7 @@
 			_path = new List<(Vector3 pos, Quaternion rotation)>(path);
 			_pointIndex = 0;
 			_speed = speed;
+			transform.position = _path[_pointIndex].pos;
 		}
 
 		void Update()
@@ -29,7 +30,7 @@
 			{
 				var point = _path[_pointIndex];
 				
-				transform.position = Vector3.Lerp(transform.position, point.pos, _speed * Time.deltaTime);
+				transform.position = Vector3.MoveTowards(transform.position, point.pos, _speed * Time.deltaTime);
 				
 				Quaternion targetRotation = Quaternion.Euler(point.rotation.eulerAngles);
 				transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, _speed * Time.deltaTime);
